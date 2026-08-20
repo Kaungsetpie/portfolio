@@ -1,0 +1,47 @@
+.app-shell {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.page-content {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.page-content > section {
+  min-height: 100svh;
+  scroll-margin-top: 96px;
+}
+
+.app-logo {
+  display: block;
+  width: 64px;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--color-font);
+  text-decoration: none;
+}
+
+.footer {
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
