@@ -21,6 +21,7 @@ import {
 } from 'react-icons/si'
 import { TbApi } from 'react-icons/tb'
 import aboutPortrait from '../../assets/about-portrait.png'
+import developerSetup from '../../assets/developer-setup.jpeg'
 import useScrollReveal from '../../hooks/useScrollReveal'
 import './about.css'
 
@@ -125,6 +126,44 @@ function AboutMe() {
             </li>
           ))}
         </ul>
+      </div>
+
+      <div className="developer-assets" aria-labelledby="developer-assets-title">
+        <div className="developer-assets-photo">
+          <img
+            src={developerSetup}
+            alt="Kaung Set Paing's multi-device development workspace"
+          />
+          <span>My workspace</span>
+        </div>
+
+        <div className="developer-assets-content">
+          <div className="developer-assets-heading">
+            <p className="about-eyebrow">Developer Setup</p>
+            <h3 id="developer-assets-title">Built across a flexible Apple and Windows workflow.</h3>
+          </div>
+
+          <div className="developer-device-list">
+            <article>
+              <span>Primary</span>
+              <h4>MacBook Pro</h4>
+              <p>Apple M3 · 16 GB unified memory</p>
+              <small>Primary system for web, mobile, and everyday product development.</small>
+            </article>
+            <article>
+              <span>Desktop</span>
+              <h4>Mac mini</h4>
+              <p>Apple M4 · 16 GB unified memory</p>
+              <small>Compact desktop for focused development, builds, and testing.</small>
+            </article>
+            <article>
+              <span>Performance</span>
+              <h4>MSI Windows</h4>
+              <p>Intel Core Ultra 7 · RTX 5070 12 GB · 32 GB RAM</p>
+              <small>GPU-powered environment for AI workloads, Windows testing, and demanding tasks.</small>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
   )
