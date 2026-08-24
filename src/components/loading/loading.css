@@ -22,7 +22,7 @@
   width: 64px;
   height: auto;
   opacity: 0;
-  animation: loading-fade-down 700ms ease-out 150ms forwards;
+  animation: loading-fade-down 420ms ease-out 80ms forwards;
 }
 
 .loading-content {
@@ -68,11 +68,11 @@
 }
 
 .loading-heading-line-first {
-  animation: loading-type-first 750ms steps(13, end) 350ms forwards;
+  animation: loading-type-first 480ms steps(13, end) 120ms forwards;
 }
 
 .loading-heading-line-second {
-  animation: loading-type-second 600ms steps(9, end) 1.1s forwards;
+  animation: loading-type-second 400ms steps(9, end) 520ms forwards;
 }
 
 .loading-content p {
@@ -88,8 +88,8 @@
   opacity: 0;
   transform: translateY(10px);
   filter: blur(5px);
-  animation: loading-word-reveal 500ms ease-out forwards;
-  animation-delay: calc(1.8s + (var(--word-index) * 75ms));
+  animation: loading-word-reveal 320ms ease-out forwards;
+  animation-delay: calc(780ms + (var(--word-index) * 28ms));
 }
 
 @keyframes loading-type-first {

@@ -12,7 +12,7 @@ const introduction =
 
 function Loading({ onComplete }: LoadingProps) {
   useEffect(() => {
-    const loadingTimer = window.setTimeout(onComplete, 5000)
+    const loadingTimer = window.setTimeout(onComplete, 1800)
 
     return () => window.clearTimeout(loadingTimer)
   }, [onComplete])

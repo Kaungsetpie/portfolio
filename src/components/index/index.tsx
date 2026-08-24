@@ -14,24 +14,24 @@ function Home() {
       </p>
       <h1>
         <span className="home-heading-line">
-          I create{' '}
+          I build reliable{' '}
           <span className="home-heading-accent">
-            thoughtful digital experiences.
+            web and mobile products.
           </span>
         </span>
       </h1>
       <p className="home-introduction">
-        I’m a developer who enjoys turning ideas into clean, purposeful web
-        experiences. I focus on simple interactions, thoughtful details, and
-        work that feels easy to use.
+        From responsive interfaces to APIs and deployment, I turn ideas into
+        polished digital products that are ready for real users and built to
+        support your business.
       </p>
 
       <div className="home-actions">
         <a className="home-button home-button-primary" href="#portfolio">
-          View My Work
+          Explore My Work
         </a>
         <a className="home-button home-button-secondary" href="#contact">
-          Contact Me
+          Start a Project
         </a>
       </div>
     </section>
