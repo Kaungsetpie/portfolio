@@ -168,6 +168,28 @@
   border-color: var(--color-font);
 }
 
+.home-button-cv {
+  gap: 0.55rem;
+  border-color: rgba(231, 205, 168, 0.45);
+  color: #e7cda8;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.home-button-cv svg {
+  width: 17px;
+  height: 17px;
+  transition: transform 180ms ease;
+}
+
+.home-button-cv:hover {
+  border-color: #e7cda8;
+  background: rgba(231, 205, 168, 0.1);
+}
+
+.home-button-cv:hover svg {
+  transform: translateY(2px);
+}
+
 @media (max-width: 600px) {
   .page-content > .home-hero {
     min-height: calc(100svh - 68px);

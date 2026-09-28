@@ -1,3 +1,4 @@
+import { LuDownload } from 'react-icons/lu'
 import './index.css'
 
 function Home() {
@@ -32,6 +33,13 @@ function Home() {
         </a>
         <a className="home-button home-button-secondary" href="#contact">
           Start a Project
+        </a>
+        <a
+          className="home-button home-button-cv"
+          href="/Kaung_Set_Paing_CV.pdf"
+          download="Kaung_Set_Paing_CV.pdf"
+        >
+          Download CV <LuDownload aria-hidden="true" />
         </a>
       </div>
     </section>

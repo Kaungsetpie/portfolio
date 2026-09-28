@@ -1,15 +1,13 @@
 import { useState, type FormEvent } from 'react'
 import { LuArrowUpRight, LuCheck, LuLoaderCircle } from 'react-icons/lu'
-import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn, FaTelegram } from 'react-icons/fa6'
+import { FaGithub, FaLinkedinIn, FaTelegram } from 'react-icons/fa6'
 import useScrollReveal from '../../hooks/useScrollReveal'
 import './contact.css'
 
 const socialLinks = [
-  { name: 'LinkedIn', url: '', icon: FaLinkedinIn },
-  { name: 'GitHub', url: '', icon: FaGithub },
-  { name: 'Telegram', url: '', icon: FaTelegram },
-  { name: 'Facebook', url: '', icon: FaFacebookF },
-  { name: 'Instagram', url: '', icon: FaInstagram },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/kaung-set-paing-921267322', icon: FaLinkedinIn },
+  { name: 'GitHub', url: 'https://github.com/Kaungsetpie', icon: FaGithub },
+  { name: 'Telegram', url: 'https://t.me/kaungset233', icon: FaTelegram },
 ]
 
 function Contact() {
@@ -56,13 +54,11 @@ function Contact() {
         <div className="contact-socials" aria-label="Social profiles">
           {socialLinks.map(({ name, url, icon: Icon }) => (
             <a
-              href={url || undefined}
+              href={url}
               className="contact-social-link"
-              aria-label={url ? `Visit ${name}` : `${name} link coming soon`}
-              aria-disabled={!url}
-              tabIndex={url ? 0 : -1}
-              target={url ? '_blank' : undefined}
-              rel={url ? 'noreferrer' : undefined}
+              aria-label={`Visit ${name}`}
+              target="_blank"
+              rel="noreferrer"
               key={name}
             >
               <Icon aria-hidden="true" />
